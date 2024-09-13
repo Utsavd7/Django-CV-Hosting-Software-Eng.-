@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Doshi - CV</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        h2 {
+            color: darkblue; /* Set the color of the h2 headings to dark blue */
+        }
+    </style>
+</head>
+<body>
+    <!-- Center-aligned section for name, contact, and links -->
+    <div class="centered">
+        <h1>{{ name }}</h1>
+        <p>{{ location }} | {{ phone }} | <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <p><a href="{{ linkedin }}">LinkedIn</a> | <a href="{{ github }}">GitHub</a></p>
+    </div>
+
+    <h2>Education</h2>
+    <ul>
+        {% for edu in education %}
+            <li>{{ edu.degree }} - {{ edu.institution }} ({{ edu.honors }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Professional Experiences & Internships</h2>
+    {% for exp in experience %}
+    <h3>{{ exp.company }} - {{ exp.location }} ({{ exp.type }})</h3>
+    <p>{{ exp.position }} ({{ exp.start_date }} – {{ exp.end_date }})</p>
+    <ul>
+        {% for responsibility in exp.responsibilities %}
+            <li>{{ responsibility }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <h2>Skills & Languages</h2>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+        {% for project in projects %}
+            <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Community Work & Achievements</h2>
+    <ul>
+        {% for achievement in achievements %}
+            <li>{{ achievement }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
