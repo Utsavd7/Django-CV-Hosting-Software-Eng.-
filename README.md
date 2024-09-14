@@ -3,15 +3,14 @@
 
 The goal of this assignment was to create an HTML version of my CV using Django's templating system. The CV content was dynamically rendered in the template by passing context from the Django view.
 
-Technologies Used
+<h2>Technologies Used</h2>
 
 Python 3
 Django Web Framework
 HTML5
 CSS3
 
-
-Installation and Setup
+<h2>Installation and Setup</h2>
 
 Step 1: Set Up Your Django Project
 1) Install Django: Make sure you have Django installed in your Python environment. You can install it using pip if you haven't already:
