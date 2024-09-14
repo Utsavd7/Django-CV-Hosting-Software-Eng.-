@@ -1,5 +1,5 @@
 <html>
-Overview
+<h2>Overview</h2>
 
 The goal of this assignment was to create an HTML version of my CV using Django's templating system. The CV content was dynamically rendered in the template by passing context from the Django view.
 
