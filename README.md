@@ -16,7 +16,7 @@ CSS3
 
 <h2>Installation and Setup</h2>
 
-Step 1: Set Up Your Django Project
+<h3>Step 1: Set Up Your Django Project</h3>
 1) Install Django: Make sure you have Django installed in your Python environment. You can install it using pip if you haven't already:
 bash
 pip install django
@@ -34,21 +34,21 @@ python manage.py startapp cv
 4) Add the App to Installed Apps: Open my_cv_project/settings.py and add 'cv' to the INSTALLED_APPS list
 
 
-Step 2: Create a Django Template for Your CV
+<h3>Step 2: Create a Django Template for Your CV</h3>
 1) Create a Template Directory: Inside your cv app, create a folder named templates and within it, create another folder named cv. The path should look like this: cv/templates/cv.
 2) Create a CV Template: Inside the cv/templates/cv folder, create a file named cv.html. This file will contain the HTML structure of your CV.
 
 
-Step 3: Create a View to Render Your CV
+<h3>Step 3: Create a View to Render Your CV</h3>
 1) Create a View: Open the cv/views.py file and create a view function to render your CV.
 
 
-Step 4: Configure URLs
+<h3>Step 4: Configure URLs</h3>
 1) Create a URL Configuration: Create a new file named urls.py in the cv app directory.
 2) Include the App URLs in the Project URLs: Open my_cv_project/urls.py and include the cv app URLs
 
 
-Step 5: Run Your Django Development Server
+<h3>Step 5: Run Your Django Development Server</h3>
 1) Run the Django development server to see your CV rendered as HTML:
 
 bash
