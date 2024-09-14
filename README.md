@@ -1,4 +1,8 @@
 <html>
+<h1>Convert CV to HTML using Django Template </h1>
+
+This project is a demonstration of converting a CV (resume) into an HTML page using Django's templating system. The CV content is dynamically rendered in the template by passing context from the Django view.
+
 <h2>Overview</h2>
 
 The goal of this assignment was to create an HTML version of my CV using Django's templating system. The CV content was dynamically rendered in the template by passing context from the Django view.
